@@ -15,13 +15,13 @@ Different approaches are used to derive the confidence intervals for MOS values.
 8. Jeffrey's interval: H. Jeffreys, The theory of probability. OUP Oxford, 1998.
 
 Input data: 
-    alpha  - significance level, default value is 0.05
-    y  - user ratings y of size k x n with k test conditions and n subjects
+* alpha  - significance level, default value is 0.05 
+* y  - user ratings y of size k x n with k test conditions and n subjects 
 
 Output data: The return value is a struct containing the following data.
-      str - name of the confidence interval estimators
-      shortstr - abbreviation (for plots)
-      mos - mean opinion score averaged over the n subjects for all k test conditions
-      ciUpper - the upper confidence intervall bound
-      ciLower - the lower confidence intervall bound
-      ciWidth - the size of the confidence interval; note that the CI is not symmetric around the MOS
+* str - name of the confidence interval estimators 
+* shortstr - abbreviation (for plots)
+* mos - mean opinion score averaged over the n subjects for all k test conditions
+* ciUpper - the upper confidence intervall bound
+* ciLower - the lower confidence intervall bound
+* ciWidth - the size of the confidence interval; note that the CI is not symmetric around the MOS
